@@ -1,0 +1,38 @@
+<!-- <uvepm-promotion-top-menu [sidenav]="sidenav"></uvepm-promotion-top-menu>
+<mat-sidenav-container class="app-body">
+    <mat-sidenav #sidenav [mode]="sidebarMode" opened="true">
+        <uvepm-promotion-left-menu></uvepm-promotion-left-menu>
+    </mat-sidenav>
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav mat-tab-nav-bar class="mat-tab-label-container" *ngIf="navTabLinks.length > 0">
+                        <div class="mat-tab-label" *ngFor="let link of navTabLinks" routerLinkActive="active">
+                            <div [routerLink]="link.link">{{link.labelName}}</div>
+                            <div style="display:none" [routerLink]="link.activeLink"></div>
+                        </div>
+                    </nav>
+                    <router-outlet></router-outlet>
+                    <travalis-loader></travalis-loader>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-sidenav-container> -->
+<!-- <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin1" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full" class="">
+    <top-menu></top-menu>
+</div> -->
+
+<div id="main-wrapper">
+    <top-menu></top-menu>
+    <left-menu></left-menu>
+    <div class="page-wrapper" style="min-height: 286px;background: #f2f7f8;">
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <footer class="footer text-center">
+        © ALL RIGHTS RESERVED BY TRAVALIS 2021
+    </footer>
+</div>

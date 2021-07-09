@@ -1,0 +1,84 @@
+<div class="row ">
+    <div class="col-md-12">
+        <mat-card class="login-card" (mouseover)='bluringBackground()' (mouseleave)='unbluringBackground()'>
+            <div class="login_uve_logo"><img src="/assets/img/Logo_UVE.png" alt="UVE gestiones inmobiliarias" title="UVE gestiones inmobiliarias" /></div>
+            <div class="login_pm_logo"><img src="/assets/img/Logo_PM.png" alt="Project monitoring" title="Project monitoring" /></div>
+            <!-- <div class="login_title">Acceda a su cuenta</div> -->
+            <div class="border-top-input">
+                <form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm)" *ngIf="!loginRequestDto.isTwoWayFactor">
+                    <mat-card-content>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <ui-input-text required name="Usuario" #userName [(ngModel)]="loginRequestDto.userName"></ui-input-text>
+                                <ui-input-text required name="Contraseña" #password type="password" [(ngModel)]="loginRequestDto.password"></ui-input-text>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <mat-card-actions class="mat-card-button-login">
+                                    <button mat-raised-button type="submit" class="login-button mat-primary">
+                                        <i class="fas fa-key fa-lg"></i>
+                                    </button>
+                                </mat-card-actions>
+                            </div>
+                            <div class="col-sm-12" *ngIf="invalidUser">
+                                <mat-card-footer class="mat-card-not-valid-user">
+                                    El usuario o la contraseña no son válidos
+                                </mat-card-footer>
+                            </div>
+                        </div>
+                    </mat-card-content>
+                </form>
+                <mat-card-content *ngIf="loginRequestDto.isTwoWayFactor">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <ui-input-text required name="Código" [(ngModel)]="loginRequestDto.twoWayFactorCode"></ui-input-text>
+                        </div>
+                        <div class="col-md-9">
+                            <ui-input-checkbox labelWidth="92%" name="Recordar dispositivo" [(ngModel)]='loginRequestDto.registerDevice' class="checkLeftTitle"></ui-input-checkbox>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <mat-card-actions class="mat-card-button-login">
+                                <button mat-raised-button class="login-button mat-primary" (click)="goBack()">
+                                    <i class="fas fa-arrow-left fa-lg"></i>
+                                </button>
+                            </mat-card-actions>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 col-sm-12">
+                            <mat-card-actions class="mat-card-button-login">
+                                <button mat-raised-button class="login-button mat-primary" (click)="verifyTwoWayFactor()">
+                                    <i class="fas fa-key fa-lg"></i>
+                                </button>
+                            </mat-card-actions>
+                        </div>
+                        <div class="col-sm-12" *ngIf="invalidUser">
+                            <mat-card-footer class="mat-card-not-valid-user">
+                                Algo no es valido
+                            </mat-card-footer>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </div>
+            <div class="login_eikon_logo">
+                <a href="http://v-valoraciones.es/" target="_blank">
+                    <img src="/assets/img/logo-uve.png" alt="UVE Valoraciones" title="UVE Valoraciones" /></a>
+            </div>
+
+        </mat-card>
+    </div>
+</div>
+
+
+<div class="full-page-background" [@myAnimation]="showBackgroundImage" [ngStyle]="{'background-image': 'url(' + activeBackgroundImage + ')'}"></div>
+<!--PREVENT BLINKING-->
+<img src="/assets/img/back_01.jpg" style="display:none;" />
+<img src="/assets/img/back_02.jpg" style="display:none;" />
+<img src="/assets/img/back_03.jpg" style="display:none;" />
+<img src="/assets/img/back_04.jpg" style="display:none;" />
+<img src="/assets/img/back_05.jpg" style="display:none;" />
+<img src="/assets/img/back_01_blur.jpg" style="display:none;" />
+<img src="/assets/img/back_02_blur.jpg" style="display:none;" />
+<img src="/assets/img/back_03_blur.jpg" style="display:none;" />
+<img src="/assets/img/back_04_blur.jpg" style="display:none;" />
+<img src="/assets/img/back_05_blur.jpg" style="display:none;" />

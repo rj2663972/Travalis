@@ -1,0 +1,43 @@
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+        <div class="scroll-sidebar" style="overflow: hidden; width: auto; height: 100%;">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav active">
+                <ul id="sidebarnav" class="in">
+                    <li routerLinkActive="active">
+                        <a class="waves-effect active"><i class="fa fa-briefcase" aria-hidden="true"></i>Sales <i [ngClass]="showSaleOptions ? 'fa fa-angle-up' : 'fa fa-angle-down'"  style="margin-left: 100px;font-size: 25px;" (click)="expandSalesOptions()"></i></a>
+                        <ul [ngStyle]="{'display': showSaleOptions ? 'block': 'none'}">
+                            <li routerLinkActive="active">
+                                <a [routerLink]="['/sales/confirmed']" class="sub-items"><i>Confirmed Tickets</i></a>
+                            </li>
+                            <li routerLinkActive="active">
+                                <a [routerLink]="['/sales/exchanged']" class="sub-items"><i>Exchanged Tickets</i></a>
+                            </li>
+                            <li routerLinkActive="active">
+                                <a [routerLink]="['/sales/voided']" class="sub-items"><i>Void Tickets</i></a>
+                            </li>
+                            <li routerLinkActive="active">
+                                <a [routerLink]="['/sales/refunded']" class="sub-items"><i>Refunded Tickets</i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a href="/" class="waves-effect"><i class="fa fa-tachometer" aria-hidden="true"></i>Finance</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a href="/" class="waves-effect"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Booked Tickets</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a href="/" class="waves-effect"><i class="fa fa-ticket" aria-hidden="true"></i>Canceled Tickets</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a href="/" class="waves-effect"><i class="fa fa-male" aria-hidden="true"></i>ERP</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; left: 1px; height: 162.464px;"></div>
+        <div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; left: 1px;"></div>
+    </div>
+</aside>

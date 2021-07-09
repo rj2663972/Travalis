@@ -1,0 +1,150 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Provide sufficient contrast against white background */
+
+a {
+    color: #0366d6;
+}
+
+code {
+    color: #e01a76;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+
+/*
+#main-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    #main-wrapper[data-layout="vertical"][data-sidebar-position="fixed"][data-sidebartype="full"] .topbar .top-navbar .navbar-collapse,
+    #main-wrapper[data-layout="vertical"][data-sidebar-position="fixed"][data-sidebartype="overlay"] .topbar .top-navbar .navbar-collapse {
+        margin-left: 240px;
+    }
+    #main-wrapper[data-layout="horizontal"] .topbar .navbar-collapse[data-navbarbg="skin1"],
+    #main-wrapper[data-layout="horizontal"] .topbar[data-navbarbg="skin1"],
+    #main-wrapper[data-layout="vertical"] .topbar .navbar-collapse[data-navbarbg="skin1"],
+    #main-wrapper[data-layout="vertical"] .topbar[data-navbarbg="skin1"],
+    .theme-color .theme-item .theme-link[data-navbarbg="skin1"] {
+        background: #009efb;
+        background: -moz-linear-gradient(left, #0178bc 0, #00bdda 100%);
+        background: -webkit-linear-gradient(left, #0178bc 0, #00bdda 100%);
+        background: linear-gradient(to right, #0178bc 0, #00bdda 100%);
+    }
+}
+
+@media (min-width: 576px) {
+    .topbar .navbar-expand-md .navbar-collapse {
+        justify-content: space-between;
+    }
+    .topbar .navbar-collapse {
+        padding: 0 10px 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+    }
+    .collapse:not(.show) {
+        display: none;
+    }
+    .navbar-collapse {
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+    }
+    .me-auto {
+        margin-right: auto !important;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #main-wrapper[data-layout="vertical"][data-sidebartype="full"] .topbar .top-navbar .navbar-header .navbar-brand {
+        width: 240px;
+    }
+}
+
+.topbar .top-navbar .navbar-header .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    #main-wrapper[data-layout="vertical"][data-sidebar-position="fixed"][data-sidebartype="full"] .topbar .top-navbar .navbar-collapse,
+    #main-wrapper[data-layout="vertical"][data-sidebar-position="fixed"][data-sidebartype="overlay"] .topbar .top-navbar .navbar-collapse {
+        margin-left: 240px;
+    }
+}
+
+#main-wrapper[data-layout=horizontal] .topbar .navbar-collapse[data-navbarbg=skin1],
+#main-wrapper[data-layout=horizontal] .topbar[data-navbarbg=skin1],
+#main-wrapper[data-layout=vertical] .topbar .navbar-collapse[data-navbarbg=skin1],
+#main-wrapper[data-layout=vertical] .topbar[data-navbarbg=skin1],
+.theme-color .theme-item .theme-link[data-navbarbg=skin1] {
+    background: #009efb;
+    background: -moz-linear-gradient(left, #0178bc 0, #00bdda 100%);
+    background: -webkit-linear-gradient(left, #0178bc 0, #00bdda 100%);
+    background: linear-gradient(to right, #0178bc 0, #00bdda 100%);
+}
+
+@media (min-width: 576px) {
+    .topbar .navbar-expand-md .navbar-collapse {
+        justify-content: space-between;
+    }
+}
+
+.topbar .navbar-collapse {
+    padding: 0 10px 0 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: flex!important;
+    }
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.navbar-collapse {
+    align-items: center;
+    width: 100%;
+} */
